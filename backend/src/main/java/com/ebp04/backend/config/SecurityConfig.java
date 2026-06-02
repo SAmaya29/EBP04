@@ -69,7 +69,8 @@ public class SecurityConfig {
         configuration.setAllowedOrigins(List.of(
                 "http://localhost:5173",
                 "http://127.0.0.1:5173",
-                "https://ebp-04-frontend.vercel.app"
+                "https://ebp-04-frontend.vercel.app",
+                "https://ebp-04.vercel.app/"
         ));
         configuration.setAllowedMethods(List.of("GET", "POST", "PUT", "DELETE", "PATCH", "OPTIONS"));
         // configuration.setAllowedHeaders(List.of("Authorization", "Content-Type"));
