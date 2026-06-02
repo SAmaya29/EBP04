@@ -2,7 +2,7 @@ const isLocalDevelopment =
   typeof window !== 'undefined' &&
   (window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1');
 
-const API_BASE_URL = isLocalDevelopment ? 'http://localhost:8080' : '';
+const API_BASE_URL = '';
 const AUTH_TOKEN_KEY = 'authToken';
 
 export class ApiError extends Error {
