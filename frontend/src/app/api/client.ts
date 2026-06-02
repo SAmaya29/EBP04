@@ -1,4 +1,8 @@
-const API_BASE_URL = import.meta.env.VITE_API_BASE_URL || 'http://localhost:8080';
+const isLocalDevelopment =
+  typeof window !== 'undefined' &&
+  (window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1');
+
+const API_BASE_URL = isLocalDevelopment ? 'http://localhost:8080' : '';
 const AUTH_TOKEN_KEY = 'authToken';
 
 export class ApiError extends Error {
